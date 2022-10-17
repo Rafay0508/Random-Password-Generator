@@ -1,0 +1,214 @@
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(253, 253, 189);
+        }
+
+        h2 {
+            font-size: 53px;
+            margin-top: 80px;
+        }
+
+        #container {
+            box-sizing: border-box;
+            background-color: rgb(200, 255, 212);
+            border-radius: 50px;
+            box-shadow: 5px 10px 8px 10px rgb(207, 255, 141);
+            position: relative;
+            left: 30%;
+            border: 2px solid red;
+            width: 500px;
+            height: 300px;
+        }
+
+        #text {
+            position: absolute;
+            width: 300px;
+            height: 40px;
+            left: 100px;
+            top: 67px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        #copy {
+            position: absolute;
+            height: 40px;
+            border-radius: 5px;
+            left: 355px;
+            top: 67px;
+            cursor: pointer;
+        }
+
+        #generate {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            left: 170px;
+            top: 200px;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #length {
+            position: absolute;
+            width: 250px;
+            height: 40px;
+            left: 120px;
+            top: 110px;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        #error,
+        #indication {
+            position: absolute;
+            left: 120px;
+            top: 150px;
+            color: red;
+            display: none;
+        }
+
+        #indication {
+            display: block;
+            font-size: 20px;
+        }
+        #error{
+            font-size: 20px;
+            left: 10%
+        }
+
+
+        @media (min-width: 768px) and (max-width:1024px) {
+            #container {
+                left: 25%;
+            }
+        }
+
+        @media (min-width: 425px) and (max-width:768px) {
+            h2 {
+                font-size: 50px;
+            }
+
+            #container {
+                left: 25%;
+                width: 400px;
+                height: 300px;
+            }
+
+            #text {
+                left: 50px;
+            }
+
+            #copy {
+                left: 310px;
+            }
+
+            #length {
+                left: 80px
+            }
+
+            #error,
+            #indication {
+                left: 60px;
+            }
+
+            #error {
+                left: 20px;
+                font-size: 30px;
+            }
+
+            #generate {
+                left: 150px;
+            }
+        }
+
+        @media (min-width: 375px) and (max-width:425px) {
+            h2 {
+                margin-left: 0%;
+            }
+
+            #container {
+                left: 2%;
+                /* width: 400px;
+                height: 300px; */
+            }
+
+        }
+
+        @media (min-width: 320px) and (max-width:375px) {
+            h2 {
+                font-size: 34px;
+                margin-left: 02%;
+                text-align: center;
+            }
+
+            #container {
+                left: 2%;
+                width: 350px;
+                height: 300px;
+            }
+
+            #text {
+                left: 30px;
+            }
+
+            #copy {
+                left: 285px;
+            }
+            #length {
+                left: 60px
+            }
+
+            #error,
+            #indication {
+                left: 20px;
+                /* display: none; */
+            }
+
+            #error {
+                left: 9.5px;
+                top: 160px;
+                font-size: 16px;
+            /* display: block; */
+            }
+            #generate {
+                left: 120px;
+            }
+        }
+        @media (max-width: 320px){
+            #container{
+                left: -1%;
+                width: 310px;
+            }
+            #text{
+                width: 250px;
+            }
+            #copy{
+                left: 80%;
+            }
+            #length{
+                left: 12%;
+            }
+            #indication{
+                font-size: 16px;
+                display: none;
+            }
+            #error {
+                left: 9.5px;
+                top: 160px;
+                font-size: 18px;
+            display: block;
+            }
+            #generate{
+                top: 220px;
+                left: 35%;
+            }
+
+        }
